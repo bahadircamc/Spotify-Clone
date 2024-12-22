@@ -34,5 +34,4 @@ To contribute to this project, please open an issue first. Fork the repository, 
 Here is a short GIF demonstrating the main features of the Spotify clone:
 
 ![Spotify Clone Demo](ekranKaydi.gif)
-|
-![Responsive Design](ekranKaydi1.gif)
+
