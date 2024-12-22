@@ -1,0 +1,147 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $gray;
+  width: 100%;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  //Ust kisim
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+
+    form {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.246);
+      border-radius: 5px;
+      display: flex;
+      width: 100%;
+      max-width: 350px;
+
+      @include md {
+        max-width: none;
+      }
+
+      input {
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 10px;
+        color: $text;
+        width: 100%;
+      }
+      button {
+        padding-right: 10px;
+      }
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      @media (max-width: 665px) {
+        display: none;
+      }
+      span {
+        font-size: 14px;
+        cursor: pointer;
+        white-space: nowrap;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  //Sarkilar
+  section {
+    flex: 1;
+
+    h2 {
+      @include sm {
+        font-size: 17px;
+      }
+    }
+
+    .list {
+      margin-top: 20px;
+      height: 10;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      @include md {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+      gap: 20px;
+    }
+  }
+}
+.card {
+  background: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .card-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    .play {
+      bottom: 20px;
+      opacity: 1;
+
+      i {
+        pointer-events: none;
+      }
+    }
+    img {
+      scale: 1.1;
+    }
+  }
+
+  figure {
+    position: relative;
+    img {
+      width: 100%;
+      transition: all 0.3s;
+      border-radius: 5px;
+    }
+    .play {
+      background: $green;
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      position: absolute;
+      right: 10px;
+      bottom: -20px;
+      transition: all 0.3s;
+      font-size: 23px;
+      opacity: 0;
+      cursor: pointer;
+
+      &:hover {
+        background: #0f6d32;
+        scale: (1.1);
+        rotate: 360deg;
+      }
+    }
+  }
+}

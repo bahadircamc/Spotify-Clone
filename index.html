@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- logo icon link -->
+    <link
+      rel="shortcut icon"
+      href="./images/no-text-logo.png"
+      type="image/x-icon"
+    />
+    <title>Spotify-cln</title>
+
+    <!-- Bstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <!--*Aside-->
+      <aside>
+        <figure>
+          <img src="./images/no-text-logo.png" />
+          <span>Spotify</span>
+        </figure>
+
+        <nav>
+          <a href="./index.html">
+            <i class="bi bi-house"></i>
+            <span>Anasayfa</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-search"></i>
+            <span>Arama</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-collection"></i>
+            <span>Kutuphane</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-music-note-list"></i>
+            <span>Calma Listeleri</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-heart"></i>
+            <span>Begenilen Sarkilar</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!--*MAin-->
+      <main>
+        <!--Header-->
+        <header>
+          <form>
+            <input type="text" placeholder="muzik arayin..." />
+            <button>
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <nav>
+            <span>Premium</span>
+            <span>Destek</span>
+            <span>Oturum Ac</span>
+          </nav>
+        </header>
+
+        <!--Songs-->
+        <section>
+          <h2 id="title">Populer Muzikler</h2>
+
+          <!--Sarkilar alani-->
+          <div class="list">
+            <!--Card-->
+            <!-- <div class="card">
+
+                <figure>
+                    <img src="https://i.scdn.co/image/ab67616d00001e0208caa6d45ef97ce44edf1189"alt="">
+                    <div class="play">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+                </figure>
+                <h4>Ati242</h4>
+                <h4>25</h4>
+            </div> -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!--*Player-->
+    <div class="player">
+      <!-- sarki bilgileri  -->
+      <div class="info">
+        <img
+          src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/84/a4/ab/84a4abe9-4c27-5357-35e5-de47866ac408/196922929915_Cover.jpg/400x400cc.jpg"
+        />
+        <div>
+          <h5>Emre Fel</h5>
+          <p>Sana El Pence Duramam</p>
+        </div>
+      </div>
+
+      <!-- oynatici -->
+      <audio controls >
+        <source
+      src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/22/9c/71229c8c-f6cc-1baa-e7a8-f0b9071cdd8b/mzaf_12174439733351984763.plus.aac.ep.m4a" >
+      </audio>
+
+      <!-- ikonlar -->
+      <div class="icons">
+        <i class="bi bi-music-note-list"></i>
+        <i class="bi bi-boombox-fill"></i>
+        <i class="bi bi-pc-display"></i>
+      </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+aside{
+    background-color: $gray;
+    padding: 20px;
+    border-radius: 10px;
+
+    @include xl{
+        padding: 20px 10px;
+    }
+    
+    figure{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 40px;
+        }
+
+        span{
+            font-size: 25px;
+            font-weight: bold;
+            color: $green;
+            @include lg{
+                display: none;
+            }
+        }
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+
+        a{
+            border-radius: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+
+            i{
+                @include lg{
+                    font-size: 18px;
+                }
+            }
+
+            span{
+                @include lg{
+                    display: none;
+                }
+            }
+            
+            &:hover{
+                background-color: $green;
+                color: black;
+                scale: 1.1;
+            }
+        }
+    }
+}
